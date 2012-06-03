@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+This file will contain the registration form to be filled in by the user of our application
+and this file will be loaded only when detecting that the device has not been registered
+with our system. 
+-->
+
+<!-- To provide for the scroll bars, the LinearLayout need to be 
+wrapped inside ScrollView, and providing the layout parameters and the xmlns parameters
+in the ScrollView is manadatory.
+ -->
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:scrollbars="vertical"
+>
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"  
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	>
+	  
+	  <!-- This is the registration menu where users have to register
+	  their devices if the application detectes that the device has not been
+	  registered before. Now we are including simply a TextView, later on we will
+	  make sure to include the required parameters to support the registration process -->
+	  <TextView
+	  	android:id="@+id/registrationMenuTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Register Your Device \n----------------------------------------------------------------"
+	  	android:textStyle="bold"
+	  />
+	  <TextView
+	  	android:id="@+id/firstNameTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="First Name: "
+	  />  
+	  <EditText
+	  	android:id="@+id/firstNameEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/secondNameTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Second Name: "
+	  />  
+	  <EditText
+	  	android:id="@+id/secondNameEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/dateOfBirthTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Date of Birth: "
+	  />  
+	  <EditText
+	  	android:id="@+id/dateOfBirthEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/emailTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="e-mail Address: "
+	  />  
+	  <EditText
+	  	android:id="@+id/emailEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/passwordTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Password: "
+	  />  
+	  <EditText
+	  	android:id="@+id/passwordEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:password="true"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/confrimPasswordTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Confrim Password: "
+	  />  
+	  <EditText
+	  	android:id="@+id/confrimPasswordEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:password="true"  	
+	  	android:maxLines="1"/>  	
+	  <TextView
+	  	android:id="@+id/separatorTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="\n"
+	  />
+	  <Button
+	  	android:id="@+id/registerButton"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:text="Submit Registration Request"
+	  />
+	</LinearLayout>
+</ScrollView>

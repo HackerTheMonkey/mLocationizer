@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  
+  <TextView 
+  	android:id="@+id/aboutMenuMainTextView"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:text="University College London\nDepartment of Electronic and Electrical Engineering\nMSC Telecommunication Engineering - 2010\nXiaodi Sha\nLaura Kabayeva\nJipeng Xiong\nHasnaein Al-Khafaji\nYiannis Tofis" 
+  	android:background="#F8AF07"
+  	android:textColor="#000000"
+  	android:typeface="serif"
+  	android:textSize="10.0pt"
+  />
+</LinearLayout>

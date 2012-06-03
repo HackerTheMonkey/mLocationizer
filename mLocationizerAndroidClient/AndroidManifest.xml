@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="uk.ac.ucl.ee.snsAssignment.mLocationizer"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">	
+		
+		<!--	The Main activity that the applications runs in	-->
+		<activity android:name=".MainActivity" 
+                  android:label="@string/app_name"
+                  android:process=":mainActivityProcess">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Sub Activities that are called from the main activity -->
+        <activity android:name=".ShowMyLocationSubActivity" android:process=":showMyLocationSubActivityProcess"/>
+        <activity android:name=".AboutMenuSubActivity"/>
+        <activity android:name=".AddFriendSubActivity" />
+        <activity android:name=".ShowSettingsSubActivity" />
+        <activity android:name=".ShowFriendRequestNotificationSubActivity"/>
+        <activity android:name=".RemoveFriendSubActivity"/>
+        <activity android:name=".ShowChangeOwnershipMenuSubActivity" />
+        
+        <!-- Indicating what external libraries are to be used in the application -->
+        <uses-library android:name="com.google.android.maps"/>
+        
+		<!--        This broadcast receiver will listen for certain kinds of events and will
+					update the server with the location of the device basing on the occurance
+					of those events         -->
+		<receiver android:name=".LocationUpdateBroadcastReceiver" android:enabled="true">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.PACKAGE_REPLACED" />
+				<action android:name="android.intent.action.REBOOT" />
+				<action android:name="android.intent.action.ACTION_SHUTDOWN" />
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+			</intent-filter>
+		</receiver>
+    </application>
+    
+    <uses-sdk android:minSdkVersion="7" />
+    
+	<!-- The types of the permissions that are required for this application	-->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>	
+	<uses-permission android:name="android.permission.DELETE_PACKAGES"></uses-permission>
+</manifest> 

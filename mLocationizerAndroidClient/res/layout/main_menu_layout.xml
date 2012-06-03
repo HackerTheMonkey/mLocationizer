@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+This file will contain the main layout that will be displayed to the user after his/her
+device is being registered with our server. Primarily, this is contain a ListView object
+wrapped inside a LinearLayout.
+-->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+>
+  
+  <!-- The main ListView control that will contain the main application menu -->
+  <ListView 
+  	android:id="@+id/mainMenuListView"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:soundEffectsEnabled="true"
+  />
+  
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:scrollbars="vertical"
+>
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"  
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	>
+	  
+	  <TextView
+	  	android:id="@+id/changeOwnershipTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Change Device Ownership \n----------------------------------------------------------------"
+	  	android:textStyle="bold"
+	  />
+	  <TextView
+	  	android:id="@+id/firstNameChangeOwnershipTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="First Name: "
+	  />  
+	  <EditText
+	  	android:id="@+id/firstNameChangeOwnershipEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/secondNameChangeOwnershipTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Second Name: "
+	  />  
+	  <EditText
+	  	android:id="@+id/secondNameChangeOwnershipEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/dateOfBirthChangeOwnershipTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Date of Birth: "
+	  />  
+	  <EditText
+	  	android:id="@+id/dateOfBirthChangeOwnershipEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/emailChangeOwnershipTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="e-mail Address: "
+	  />  
+	  <EditText
+	  	android:id="@+id/emailChangeOwnershipEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/passwordChangeOwnershipTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Password: "
+	  />  
+	  <EditText
+	  	android:id="@+id/passwordChangeOwnershipEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:password="true"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/newOwnerPasswordTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="New Owner Password: "
+	  />  
+	  <EditText
+	  	android:id="@+id/newOwnerPasswordEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:password="true"  	
+	  	android:maxLines="1"/>
+	  <TextView
+	  	android:id="@+id/newOwnerPasswordConfirmTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Confirm New Owner Password: "
+	  />  
+	  <EditText
+	  	android:id="@+id/newOwnerPasswordConfirmEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:password="true"  	
+	  	android:maxLines="1"/>	  	
+	  <TextView
+	  	android:id="@+id/separatorChangeOwnershipTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="\n"
+	  />
+	  <Button
+	  	android:id="@+id/changeOwnershipButton"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:text="Submit Change Ownership Request"
+	  />
+	</LinearLayout>
+</ScrollView>

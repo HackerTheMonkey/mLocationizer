@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <TextView
+	  	android:id="@+id/settingsLabelTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Update the fields in this settings page, click on SAVE SETTINGS button to save your settings \n----------------------------------------------------------------"
+	  	android:textStyle="bold"
+  />
+  
+  <TextView
+	  	android:id="@+id/enterServerIPAddressTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Please enter the server IP address or domain name:"	
+  />
+  
+  	<EditText
+	  	android:id="@+id/enterServerIPAddressEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"
+  	/>
+  	
+  	<TextView
+	  	android:id="@+id/enterPortNumberTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Please enter the port number that the server is listening on:"	
+  />
+  
+  	<EditText
+	  	android:id="@+id/enterPortNumberEditText"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"  	
+	  	android:maxLines="1"
+  	/>
+  	
+  	<TextView
+	  	android:id="@+id/shareYourLocationTextView"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:text="Do you want your location to be available to your other friends:"	  	
+  	/>
+  	<RadioGroup
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  	>  	
+	 	<RadioButton
+  			android:id="@+id/makeLocationAvailableRadioButton"
+  			android:text="Make my location available to friends."  			
+  		/>
+  		<RadioButton
+  			android:id="@+id/makeLocationUnAvailableRadioButton"
+  			android:text="Stop updating my location to friends."
+  		/> 
+  	</RadioGroup>
+  	
+  	<Button
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/saveSettingsButton"
+  		android:text="Save Settings"
+  	/>
+</LinearLayout>
